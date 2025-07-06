@@ -1,0 +1,217 @@
+{% extends "base.html" %}
+
+{% block title %}Estudios - Pablo Caraballo{% endblock %}
+
+{% block content %}
+<section class="education-page py-5" style="margin-top: 80px;">
+    <div class="container">
+        <h1 class="text-center mb-5" data-aos="fade-up">Mi Formación Académica</h1>
+        
+        <!-- Estudios Actuales -->
+        <div class="current-study mb-5" data-aos="fade-up">
+            <div class="alert alert-primary d-flex align-items-center" style="background-color: rgba(0, 212, 255, 0.1); border: 1px solid var(--primary-color);">
+                <i class="fas fa-graduation-cap fa-2x me-3" style="color: var(--primary-color);"></i>
+                <div>
+                    <h5 class="mb-1 text-white">Último curso realizado:</h5>
+                    <strong style="color: #ffffff";>Máster F.P en Ciberseguridad en Entornos TI - I.E.S Mar de Cádiz
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline de Estudios -->
+        <div class="row">
+            <div class="col-12">
+                <div class="education-timeline">
+                    <!-- Especialización en Ciberseguridad -->
+                    <div class="edu-timeline-item current" data-aos="fade-right">
+                        <div class="edu-year">
+                            <span>2024 - 2025</span>
+                        </div>
+                        <div class="edu-content">
+                            <div class="edu-header">
+                                <h3>Especialización en Ciberseguridad en Entornos TI</h3>
+                                <h4 class="text-primary">I.E.S Mar de Cádiz</h4>
+                                <span class="badge bg-primary">Completado</span>
+                            </div>
+                            <div class="edu-details mt-3">
+                                <h5 class="text-primary mb-3">Módulos principales:</h5>
+                                <div class="modules-grid">
+                                    <div class="module-item">
+                                        <i class="fas fa-shield-alt me-2"></i>
+                                        Gestión de Incidentes de Ciberseguridad
+                                    </div>
+                                    <div class="module-item">
+                                        <i class="fas fa-lock me-2"></i>
+                                        Bastionado de Redes y Sistemas
+                                    </div>
+                                    <div class="module-item">
+                                        <i class="fas fa-search me-2"></i>
+                                        Análisis Forense Informático
+                                    </div>
+                                    <div class="module-item">
+                                        <i class="fas fa-user-shield me-2"></i>
+                                        Hacking Ético
+                                    </div>
+                                    <div class="module-item">
+                                        <i class="fas fa-file-alt me-2"></i>
+                                        Normativa de Ciberseguridad
+                                    </div>
+                                    <div class="module-item">
+                                        <i class="fas fa-project-diagram me-2"></i>
+                                        Proyecto de Ciberseguridad
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CFGS Sistemas de Telecomunicaciones -->
+                    <div class="edu-timeline-item" data-aos="fade-left">
+                        <div class="edu-year">
+                            <span>2022 - 2024</span>
+                        </div>
+                        <div class="edu-content">
+                            <div class="edu-header">
+                                <h3>CFGS Sistemas de Telecomunicaciones e Informática</h3>
+                                <h4 class="text-primary">Safa San Luis</h4>
+                                <span class="badge bg-primary">Completado</span>
+                            </div>
+                            <div class="edu-details mt-3">
+                                <h5 class="text-primary mb-3">Competencias adquiridas:</h5>
+                                <ul class="competencies-list">
+                                    <li><i class="fas fa-check text-success me-2"></i>Configuración de infraestructuras de redes locales</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Administración de sistemas operativos</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Implementación de sistemas de telefonía</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Gestión de redes de datos</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Mantenimiento de equipos informáticos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CFGM Instalaciones de Telecomunicaciones -->
+                    <div class="edu-timeline-item" data-aos="fade-right">
+                        <div class="edu-year">
+                            <span>2020 - 2022</span>
+                        </div>
+                        <div class="edu-content">
+                            <div class="edu-header">
+                                <h3>CFGM Instalaciones de Telecomunicaciones</h3>
+                                <h4 class="text-primary">I.E.S Mar de Cádiz</h4>
+                                <span class="badge bg-primary">Completado</span>
+                            </div>
+                            <div class="edu-details mt-3">
+                                <h5 class="text-primary mb-3">Competencias adquiridas:</h5>
+                                <ul class="competencies-list">
+                                    <li><i class="fas fa-check text-success me-2"></i>Instalación de infraestructuras de telecomunicaciones</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Configuración de instalaciones eléctricas básicas</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Montaje de sistemas de recepción de señales</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Instalación de redes de fibra óptica</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Mantenimiento de sistemas de telecomunicaciones</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certificaciones y Formación Complementaria -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="text-center mb-4" data-aos="fade-up">
+                    <i class="fas fa-certificate me-2"></i>Formación Complementaria
+                </h2>
+                
+                <div class="certifications-container">
+                    <!-- Certificaciones Técnicas -->
+                    <div class="cert-category" data-aos="fade-up">
+                        <h4 class="text-primary mb-3">Certificaciones Técnicas</h4>
+                        <div class="cert-grid">
+                            <div class="cert-card">
+                                <i class="fas fa-network-wired fa-2x mb-2"></i>
+                                <h5>Python</h5>
+                                <p class="text-white">Openwebinars</p>
+                            </div>
+                            <div class="cert-card">
+                                <i class="fas fa-tasks fa-2x mb-2"></i>
+                                <h5>Lean Management</h5>
+                                <p class="text-white">Certificado</p>
+                            </div>
+                            <div class="cert-card">
+                                <i class="fas fa-network-wired fa-2x mb-2"></i>
+                                <h5>Bash Scripting</h5>
+                                <p class="text-white">Openwebinars</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cursos de Seguridad -->
+                    <div class="cert-category mt-4" data-aos="fade-up" data-aos-delay="100">
+                        <h4 class="text-primary mb-3">Formación en Seguridad</h4>
+                        <div class="cert-grid">
+                            <div class="cert-card">
+                                <i class="fas fa-hard-hat fa-2x mb-2"></i>
+                                <h5>Trabajo en Altura</h5>
+                                <p class="text-white">8 horas - Prácticas E-7</p>
+                            </div>
+                            <div class="cert-card">
+                                <i class="fas fa-bolt fa-2x mb-2"></i>
+                                <h5>Riesgos Eléctricos</h5>
+                                <p class="text-white">6 horas - A-2</p>
+                            </div>
+                            <div class="cert-card">
+                                <i class="fas fa-plug fa-2x mb-2"></i>
+                                <h5>Trabajo en Tensión B.T</h5>
+                                <p class="text-white">30 horas - E-4</p>
+                            </div>
+                            <div class="cert-card">
+                                <i class="fas fa-first-aid fa-2x mb-2"></i>
+                                <h5>Primeros Auxilios</h5>
+                                <p class="text-white">4 horas - A-3</p>
+                            </div>
+                             <div class="cert-card">
+                                <i class="fas fa-hard-hat fa-2x mb-2"></i>
+                                <h5>Detección de Anormalidades y Fraudes en Medida</h5>
+                                <p class="text-white">18 horas</p>
+                            </div>
+                             <div class="cert-card">
+                                <i class="fas fa-hard-hat fa-2x mb-2"></i>
+                                <h5>Normas de Operación</h5>
+                                <p class="text-white">16 horas - B-0</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cursos Especializados -->
+                    <div class="cert-category mt-4" data-aos="fade-up" data-aos-delay="200">
+                        <h4 class="text-primary mb-3">Formación Especializada</h4>
+                        <div class="cert-list">
+                            <div class="cert-list-item">
+                                <i class="fas fa-search-dollar me-2"></i>
+                                Certificado de fusión de fibra óptica (Televés)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proyectos Académicos Destacados -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="text-center mb-4" data-aos="fade-up">
+                    <i class="fas fa-project-diagram me-2"></i>Proyectos Académicos
+                </h2>
+                
+                    <div class="project-academic-card" data-aos="fade-up" data-aos-delay="100">
+                        <h4>Proyecto Final - Telecomunicaciones</h4>
+                        <p class="text-primary">Completado - 2024</p>
+                        <p>Proyecto completo de instalación completa y configuración de red de una PYME</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h1 class="display-4 fw-bold">
+                    Hola, soy <span class="text-primary">Pablo Caraballo</span>
+                </h1>
+                <h2 class="h3 mb-4" style="color: #ffffff;">Cybersecurity Specialist</h2>
+                <p class="lead mb-4">
+                    Especialista en SOC, Pentesting y Análisis Forense. 
+                    Apasionado por proteger sistemas y datos en el mundo digital.
+                </p>
+                <div class="d-flex gap-3 mb-4">
+                    <a href="/projects" class="btn btn-primary btn-lg">
+                        <i class="fas fa-folder-open me-2"></i>Ver Proyectos
+                    </a>
+                    <a href="/contact" class="btn btn-outline-primary btn-lg">
+                        <i class="fas fa-envelope me-2"></i>Contacto
+                    </a>
+                </div>
+                <div class="tech-stack">
+                    <span class="badge bg-dark me-2 mb-2">Python</span>
+                    <span class="badge bg-dark me-2 mb-2">Linux</span>
+                    <span class="badge bg-dark me-2 mb-2">SIEM</span>
+                    <span class="badge bg-dark me-2 mb-2">Forensics</span>
+                    <span class="badge bg-dark me-2 mb-2">Cloud Security</span>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="hero-image text-center">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <span class="terminal-button red"></span>
+                            <span class="terminal-button yellow"></span>
+                            <span class="terminal-button green"></span>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code class="text-success">$ whoami
+pablo@cybersec:~$ 
+
+$ cat skills.txt
+[+] Penetration Testing
+[+] Digital Forensics  
+[+] Incident Response
+[+] Vulnerability Assessment
+[+] Security Operations
+
+$ ./scan_network.py
+[*] Scanning network...
+[+] 25 hosts discovered
+[+] 156 open ports found
+[!] 3 vulnerabilities detected
+
+$ _</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Stats -->
+<section class="py-5 stats-section" style="color: #ffffff;">
+    <div class="container">
+        <div class="row text-center" data-aos="fade-up">
+            <div class="col-md-3 mb-4">
+                <div class="stat-card">
+                    <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                    <h3 class="h1 fw-bold">3</h3>
+                    <p class="text-white">Cursos de prgramación</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="stat-card">
+                    <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                    <h3 class="h1 fw-bold">26</h3>
+                    <p class="text-white">Rooms realizadas</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="stat-card">
+                    <i class="fas fa-flag fa-3x text-primary mb-3"></i>
+                    <h3 class="h1 fw-bold">0</h3>
+                    <p class="text-white">CTFs Completados</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="stat-card">
+                    <i class="fas fa-certificate fa-3x text-primary mb-3"></i>
+                    <h3 class="h1 fw-bold">1+</h3>
+                    <p class="text-white">Certificacion</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Projects -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">Proyectos Destacados</h2>
+        <div class="row">
+            {% for project in data.projects[:3] %}
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="{{ loop.index0 * 100 }}">
+                <div class="card project-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #ffffff;">{{ project.title }}</h5>
+                        <p class="card-text" style="color: #ffffff;">{{ project.description }}</p>
+                        <div class="tech-used mb-3">
+                            {% for tech in project.technologies %}
+                            <span class="badge bg-secondary me-1">{{ tech }}</span>
+                            {% endfor %}
+                        </div>
+                        <a href="{{ project.github }}" class="btn btn-sm btn-outline-primary">
+                            <i class="fab fa-github me-1"></i>Ver código
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="text-center mt-4">
+            <a href="/projects" class="btn btn-primary">Ver todos los proyectos</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

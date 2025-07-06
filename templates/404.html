@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}404 - Página no encontrada{% endblock %}
+
+{% block content %}
+<section class="error-page min-vh-100 d-flex align-items-center">
+    <div class="container text-center">
+        <div class="error-content" data-aos="fade-up">
+            <h1 class="display-1 fw-bold text-primary">404</h1>
+            <h2 class="display-4 mb-4">¡Oops! Página no encontrada</h2>
+            <p class="lead mb-5">
+                Parece que has encontrado una vulnerabilidad en mi portfolio... 
+                ¡pero no es intencional! 😅
+            </p>
+            
+            <div class="terminal-window mx-auto" style="max-width: 600px;">
+                <div class="terminal-header">
+                    <span class="terminal-button red"></span>
+                    <span class="terminal-button yellow"></span>
+                    <span class="terminal-button green"></span>
+                </div>
+                <div class="terminal-body">
+                    <pre><code class="text-danger">$ curl https://portfolio.local/{{ request.path }}
+HTTP/1.1 404 Not Found
+Content-Type: text/html
+
+<span class="text-warning">[!] Error: The requested resource was not found</span>
+<span class="text-info">[*] Suggestions:</span>
+    - Check the URL for typos
+    - Return to the home page
+    - Contact the administrator
+
+$ <span class="cursor">_</span></code></pre>
+                </div>
+            </div>
+            
+            <div class="mt-5">
+                <a href="/" class="btn btn-primary btn-lg me-3">
+                    <i class="fas fa-home me-2"></i>Volver al Inicio
+                </a>
+                <a href="/contact" class="btn btn-outline-primary btn-lg">
+                    <i class="fas fa-envelope me-2"></i>Contactar
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.error-page {
+    background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-light) 100%);
+}
+
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+</style>
+{% endblock %}

@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block title %}Experiencia - Pablo Caraballo{% endblock %}
+
+{% block content %}
+<section class="experience-page py-5" style="margin-top: 80px;">
+    <div class="container">
+        <h1 class="text-center mb-5" data-aos="fade-up">Experiencia & Formación</h1>
+        
+        <!-- Experiencia Laboral -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="mb-4 text-primary" data-aos="fade-right">
+                    <i class="fas fa-briefcase me-2"></i>Experiencia Laboral
+                </h2>
+                
+                <div class="timeline">
+                    {% for job in experience %}
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="{{ loop.index0 * 100 }}">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4 class="mb-1">{{ job.position }}</h4>
+                                <h5 class="text-primary mb-2">{{ job.company }}</h5>
+                                <p class="text-white mb-3">
+                                    <i class="fas fa-calendar-alt me-2" style="color: #ffffff";></i>{{ job.period }}
+                                </p>
+                            </div>
+                            
+                            <p class="mb-3" style="color: #ffffff";>{{ job.description }}</p>
+                            
+                            {% if job.achievements %}
+                            <div class="achievements">
+                                <h6 class="text-primary mb-2">Logros destacados:</h6>
+                                <ul class="list-unstyled">
+                                    {% for achievement in job.achievements %}
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        {{ achievement }}
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                    
+                    <!-- Añade más experiencias -->
+                     <!-- Cobra-->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4 class="mb-1">Oficial de 3ª electricista</h4>
+                                <h5 class="text-primary mb-2">Cobra Servicios Auxiliares S.A</h5>
+                                <p class="text-white mb-3">
+                                    <i class="fas fa-calendar-alt me-2" style="color: #ffffff";></i>Octubre 2024 - Enero 2025
+                                </p>
+                            </div>
+                            <p class="mb-3">Revisión, verificación y certificación de instalaciones de Endesa.</p>
+                            <div class="location text-white">
+                                <i class="fas fa-map-marker-alt me-2"></i>Cádiz, provincia
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Anpame -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4 class="mb-1">Técnico de Telecomunicaciones</h4>
+                                <h5 class="text-primary mb-2">Anapame</h5>
+                                <p class="text-white mb-3">
+                                    <i class="fas fa-calendar-alt me-2" style="color: #ffffff";></i>Marzo 2024 - Junio 2024
+                                </p>
+                            </div>
+                            <p class="mb-3">Técnico de telecomunicaciones en el sector de la construcción.</p>
+                            <div class="location text-white">
+                                <i class="fas fa-map-marker-alt me-2"></i>Rota, Cádiz
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Melega -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4 class="mb-1">Técnico de Telecomuniones y Electricista</h4>
+                                <h5 class="text-primary mb-2">Melega S.L</h5>
+                                <p class="text-white mb-3">
+                                    <i class="fas fa-calendar-alt me-2" style="color: #ffffff";></i>Marzo 2022 - Junio 2022
+                                </p>
+                            </div>
+                            <p class="mb-3">Técnico de telecomunicaciones y electricista en el sector de la construcción.</p>
+                            <div class="location text-white">
+                                <i class="fas fa-map-marker-alt me-2"></i>El Puerto de Santa María, Cádiz
+                            </div>
+                        </div>
+                    </div>
+        
+        <!-- Certificaciones y Cursos -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="mb-4 text-primary" data-aos="fade-right">
+                    <i class="fas fa-certificate me-2"></i>Certificaciones y Cursos
+                </h2>
+                
+                <div class="certifications-list">
+                    <div class="cert-item" data-aos="fade-up">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        Certificado de fusión de fibra óptica de Televés
+                    </div>
+                    <div class="cert-item" data-aos="fade-up" data-aos-delay="50">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        Curso de Lean Management
+                    </div>
+                    <div class="cert-item" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        Curso de Detección de Anormalidades y Fraudes en Medida (18h)
+                    </div>
+                    <div class="cert-item" data-aos="fade-up" data-aos-delay="150">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        Curso de Primeros Auxilios (A-3) (4h)
+                    </div>
+                    <div class="cert-item" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        Curso de Trabajo en Altura-Prácticas (E-7) (8h)
+                    </div>
+                    <div class="cert-item" data-aos="fade-up" data-aos-delay="250">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        Curso de Riesgos Eléctricos (A-2) (6h)
+                    </div>
+                    <div class="cert-item" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        Curso de Trabajo en Tensión en B.T (E-4) (30h)
+                    </div>
+                     <div class="cert-item" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        Python desde cero (12h)
+                    </div>
+                    <div class="cert-item" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        Python 3 (20h)
+                    </div>
+                    <div class="cert-item" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        Bash scripting y automatización de procesos (6h)
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

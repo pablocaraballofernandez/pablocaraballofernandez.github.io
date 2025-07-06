@@ -1,0 +1,128 @@
+{
+  "personal_info": {
+    "name": "Pablo Caraballo",
+    "title": "Cybersecurity Specialist",
+    "email": "pablocaraballofndz@gmail.com",
+    "phone": "+34 644 32 52 71",
+    "location": "El Puerto de Santa María, España",
+    "github": "https://github.com/pablocaraballofernandez",
+    "linkedin": "https://www.linkedin.com/in/pablo-caraballo-fernández-a12938358",
+    "tryhackme": "https://tryhackme.com/p/CyberPablo",
+    "hackthebox": "https://app.hackthebox.com/profile/673429"
+  },
+  "about": {
+    "description": "Especialista en ciberseguridad con formación técnica en sistemas de telecomunicaciones e informática. Apasionado por la seguridad ofensiva y defensiva, con experiencia práctica en SOC, pentesting y análisis forense.",
+    "interests": [
+      "Security Operations Center (SOC)",
+      "Penetration Testing",
+      "Digital Forensics",
+      "Incident Response",
+      "Cloud Security"
+    ]
+  },
+  "skills": {
+    "technical": [
+      {
+        "category": "SIEM & Monitoring",
+        "tools": ["Splunk", "ELK Stack", "QRadar", "Wazuh"],
+        "level": 90
+      },
+      {
+        "category": "Penetration Testing",
+        "tools": ["Metasploit", "Burp Suite", "Nmap", "OWASP ZAP"],
+        "level": 85
+      },
+      {
+        "category": "Forensics",
+        "tools": ["Autopsy", "Volatility", "Wireshark", "FTK"],
+        "level": 85
+      },
+      {
+        "category": "Programming",
+        "tools": ["Python", "Bash"],
+        "level": 75
+      },
+      {
+        "category": "Other interesting tools",
+        "tools": ["Iptables", "Wireshark", "Docker", "Aircrack-ng"],
+        "level": 85
+      }
+    ],
+    "certifications": [
+
+      {
+        "name": "ISC2 CC",
+        "status": "Complete",
+        "date": "2025"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "Plan de Concienciación",
+      "description": "Plan de concienciación completo, con ideas de posters y trípticos",
+      "image": "img/projects/soc-dashboard.png",
+      "technologies": ["Prevención", "Normativa", "Empleados", "Concienciación"],
+      "github": "/",
+      "demo": "",
+      "highlights": [
+        "Prevención de incidencias",
+        "Enseñar y concienciar",
+        "Redactar y documentar"
+      ]
+    },
+    {
+      "title": "Entrenamiento de Emails Phishing ",
+      "description": "Herramienta de enviado de correos phishing",
+      "image": "img/projects/scanner-demo.gif",
+      "technologies": ["Gophish", "Prevención", "IP", "Malware"],
+      "github": "/",
+      "demo": "",
+      "highlights": [
+        "Ingeniería social",
+        "Entrenamiento para personal",
+        "Phishing"
+      ]
+    },
+    {
+      "title": "Apuntes Teóricos Sobre la Ciberseguridad",
+      "description": "Apuntes con conceptos básicos sobre ciberseguridad",
+      "image": "img/projects/web-scanner.png",
+      "technologies": ["Redes", "Sistemas", "Vulnerabilidades", "Protocolos"],
+      "github": "/",
+      "demo": "",
+      "highlights": [
+        "Definición de conceptos",
+        "Redes",
+        "Uso de definiciones segun organizaciones"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "position": "Técnico Informático",
+      "company": "AreaMovil",
+      "period": "Marzo 2023 - Junio 2023",
+      "description": "Mantenimiento e instalaciones de red, reparación de equipos informáticos",
+      "achievements": [
+        "Gestión y resolución de incidencias",
+        "Gestión de servidores y mantenimiento",
+        "Copias de seguridad, antivirus, LAN's, etc"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Especialización en Ciberseguridad en Entornos TI",
+      "institution": "I.E.S Mar de Cádiz",
+      "period": "2024 - 2025",
+      "status": "Completado"
+    },
+    {
+      "degree": "CFGS Sistemas de Telecomunicaciones e Informática",
+      "institution": "Safa San Luis",
+      "period": "2022 - 2024",
+      "status": "Completado"
+    }
+  ]
+}

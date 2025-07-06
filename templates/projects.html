@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Proyectos - Pablo Caraballo{% endblock %}
+
+{% block content %}
+<section class="projects-page py-5" style="margin-top: 80px;">
+    <div class="container">
+        <h1 class="text-center mb-5" data-aos="fade-up">Mis Proyectos</h1>
+        
+        <div class="row">
+            {% for project in projects %}
+            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="{{ loop.index0 * 100 }}">
+                <div class="card project-card h-100">
+                    <!-- Imagen del proyecto -->
+                    {% if project.image %}
+                    
+                    {% endif %}
+                    
+                    <div class="card-body">
+                        <h3 class="card-title text-white">{{ project.title }}</h3>
+                        <p class="card-text text-white">{{ project.description }}</p>
+                        
+                        <div class="mb-3">
+                            {% for tech in project.technologies %}
+                            <span class="badge bg-secondary me-1">{{ tech }}</span>
+                            {% endfor %}
+                        </div>
+                        
+                        <ul class="list-unstyled">
+                            {% for highlight in project.highlights %}
+                            <li><i class="fas fa-check text-success me-2"></i>{{ highlight }}</li>
+                            {% endfor %}
+                        </ul>
+                        
+                        <div class="mt-auto">
+                            <a href="{{ project.github }}" class="btn btn-primary" target="_blank">
+                                <i class="fab fa-github me-2"></i>Ver Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

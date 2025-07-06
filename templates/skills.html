@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Skills - Pablo Caraballo{% endblock %}
+
+{% block content %}
+<section class="skills-page py-5" style="margin-top: 80px;">
+    <div class="container">
+        <h1 class="text-center mb-5" data-aos="fade-up">Habilidades Técnicas</h1>
+        
+        <div class="row">
+            {% for skill in skills.technical %}
+            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="{{ loop.index0 * 100 }}">
+                <h4>{{ skill.category }}</h4>
+                <div class="progress mb-3" style="height: 25px;">
+                    <div class="progress-bar bg-primary" 
+                         role="progressbar" 
+                         style="width: {{ skill.level }}%"
+                         aria-valuenow="{{ skill.level }}" 
+                         aria-valuemin="0" 
+                         aria-valuemax="100">
+                        {{ skill.level }}%
+                    </div>
+                </div>
+                <p class="text-muted">
+                    {% for tool in skill.tools %}
+                    <span class="badge bg-dark me-1">{{ tool }}</span>
+                    {% endfor %}
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <h2 class="text-center mt-5 mb-4" data-aos="fade-up">Certificaciones</h2>
+        <div class="row justify-content-center">
+            {% for cert in skills.certifications %}
+            <div class="col-md-4 text-center mb-3" data-aos="fade-up">
+                <div class="card">
+                   <div class="card bg-dark text-white border-primary">
+    <div class="card-body">
+        <h5 class="text-primary">{{ cert.name }}</h5>
+        <p class="text-light">{{ cert.status }} - {{ cert.date }}</p>
+    </div>
+</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
