@@ -1,16 +1,14 @@
 # 🌐 Portfolio Personal - Cybersecurity Specialist
 
-Portfolio web profesional desarrollado con Flask para mostrar proyectos y habilidades en ciberseguridad.
+Mi portfolio personal.
 
 ## 🚀 Características
 
-- ✨ Diseño moderno y responsive
-- 📱 Optimizado para móviles
-- 🌓 Tema oscuro profesional
-- 📊 Integración con GitHub Stats
-- 📧 Formulario de contacto funcional
-- 🔍 SEO optimizado
-
+- Experiencia laboral.
+- Formación académica.
+- Proyectos personales.
+- Información de contacto.
+- 
 ## 🛠️ Instalación
 
 1. Clona el repositorio:
