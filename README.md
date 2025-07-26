@@ -8,7 +8,7 @@ Mi portfolio personal.
 - Formación académica.
 - Proyectos personales.
 - Información de contacto.
-- 
+  
 ## 🛠️ Instalación
 
 1. Clona el repositorio:
