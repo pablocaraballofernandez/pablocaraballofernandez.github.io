@@ -1,15 +1,15 @@
-# 🌐 Portfolio Personal - Cybersecurity Specialist
+#  Portfolio Personal - Cybersecurity Specialist
 
 Mi portfolio personal.
 
-## 🚀 Características
+##  Características
 
 - Experiencia laboral.
 - Formación académica.
 - Proyectos personales.
 - Información de contacto.
   
-## 🛠️ Instalación
+##  Instalación
 
 1. Clona el repositorio:
 ```bash
