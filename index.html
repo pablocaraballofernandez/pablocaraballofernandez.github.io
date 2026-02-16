@@ -38,7 +38,6 @@
             overflow-x: hidden;
         }
 
-        /* Animated Background */
         body::before {
             content: '';
             position: fixed;
@@ -54,7 +53,6 @@
             z-index: 1;
         }
 
-        /* Grid Background Pattern */
         body::after {
             content: '';
             position: fixed;
@@ -70,7 +68,6 @@
             z-index: 1;
         }
 
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -187,7 +184,7 @@
             }
         }
 
-        /* Sections */
+        /* Secciones */
         section {
             padding: 100px 20px 60px;
             max-width: 1400px;
@@ -2750,7 +2747,6 @@
     </footer>
 
     <script>
-        // Menu Toggle
         const menuToggle = document.getElementById('menuToggle');
         const navLinks = document.getElementById('navLinks');
 
@@ -2758,7 +2754,6 @@
             navLinks.classList.toggle('active');
         });
 
-        // Navbar scroll effect
         window.addEventListener('scroll', () => {
             const navbar = document.getElementById('navbar');
             if (window.scrollY > 50) {
@@ -2768,7 +2763,6 @@
             }
         });
 
-        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -2783,7 +2777,6 @@
             });
         });
 
-        // Active nav link
         const sections = document.querySelectorAll('section');
         const navItems = document.querySelectorAll('.nav-links a');
 
@@ -2805,7 +2798,6 @@
             });
         });
 
-        // Animate grid items
         const gridItems = document.querySelectorAll('.grid-item');
         let currentActive = 0;
 
@@ -2815,14 +2807,12 @@
             currentActive = (currentActive + 1) % gridItems.length;
         }, 2000);
 
-        // Form submission
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
             alert('Mensaje enviado correctamente. (Configura un servicio real de envío)');
             this.reset();
         });
 
-        // Intersection Observer for animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
@@ -2837,7 +2827,6 @@
             });
         }, observerOptions);
 
-        // Observe elements
         document.querySelectorAll('.stat-card, .timeline-item, .skill-card, .project-card, .cert-card, .education-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
